@@ -78,4 +78,4 @@ jobs:
         USERNAME: ${{ secrets.USERNAME }}
         KEY: ${{ secrets.SSHKEY }}
         script: |
-          mkdir supman
+          pwd
