@@ -68,6 +68,9 @@ jobs:
       run: |
         pytest
         
+    - name: Upload coverage
+      uses: codecov/codecov-action@v1
+        
     - name: Executing remote command
       uses: appleboy/ssh-action@master
       with:
