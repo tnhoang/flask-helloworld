@@ -81,4 +81,4 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSHKEY }}
-        script: mkdir test && touch test/app.py
+        script: export FLASK_APP=src/main.py && cd test && sudo docker-compose up -d --build
