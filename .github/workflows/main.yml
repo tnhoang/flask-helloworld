@@ -81,4 +81,4 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSHKEY }}
-        script: export FLASK_APP=src/main.py && cd test && sudo docker-compose pull tnhoang088/flask-helloworld:latest && sudo docker-compose up -d --build
+        script: export FLASK_APP=src/main.py && cd test && sudo docker pull tnhoang088/flask-helloworld:latest && sudo docker-compose up -d --build
