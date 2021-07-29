@@ -81,5 +81,4 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSHKEY }}
-        script: |
-          pwd
+        script: mkdir test && touch test/app.py
