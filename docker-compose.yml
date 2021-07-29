@@ -1,7 +1,7 @@
-version: '3'
+version: "3"
 
 services:
   registry:
-    image: tnhoang088/flask-helloworld
+    image: test-flask
     ports:
-    - "5000:5000"
+      - "5000:5000"

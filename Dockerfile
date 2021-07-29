@@ -1,10 +1,12 @@
 FROM python:3.7-slim
 
-WORKDIR app
+WORKDIR /app
+ENV FLASK_APP=src/main.py  
 
 COPY ./src ./
 COPY requirements.txt ./
 
 RUN pip install -r requirements.txt
 
-CMD ["sh", "-c", "unicorn --workers 1 --threads 4 --timeout 0 main:app"]
+CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
+
